@@ -5,4 +5,4 @@ Intro: you start as a peasant, through this adventure, it is about choosing your
 [Join guild](guild.html)
 
 
-# Please note that this is still early development and we don't know if this will able to finished.
+Please note that this is still early development and we don't know if this will able to finished.
