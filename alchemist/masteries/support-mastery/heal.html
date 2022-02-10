@@ -27,7 +27,7 @@
             div{
                 text-align:center;
                 letter-spacing:2px;
-                animation-name:y;
+                animation-name:y, a;
                 animation-duration:5s;
                 animation-iteration-count:infinite;
                 position: absolute;
@@ -68,6 +68,14 @@
                 }
                 
             }
+            @keyframes a{
+                0%{
+                    background-color:rgba(154,205,50,0.1);
+                }
+                100%{
+                    background-color:rgba(154,205,50,.3);
+                }
+            }
             @keyframes b {
             0%,18%,22%,25%,53%,57%,100%{
             text-shadow: 0 0 4px #9ACD32,
@@ -98,6 +106,7 @@
                 animation-duration:5s;
                 animation-iteration-count: infinite;
             }
+            
         </style>
 
         <title>Title</title>
