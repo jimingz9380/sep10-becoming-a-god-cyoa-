@@ -6,19 +6,114 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <style>
             /* CSS */
-            
+            html,body{
+                height:100%;
+            }
+
+            body {
+            background-image:url(../../../picture/wizard.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color:black;
+            background-blend-mode: screen;
+            }
+            div{
+                text-align:center;
+                letter-spacing:2px;
+                animation-name:y, a;
+                animation-duration:5s;
+                animation-iteration-count:infinite;
+                position: absolute;
+                top:30%;
+                left:15%;
+                transform:translateX(-50%),translateY(-50%);
+                padding:1%;
+            }
+            @keyframes y{
+                0%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(360deg,#B8E80C,#70F20C,#12DB00);
+                    border-image-slice: 1;
+                    
+                }
+                25%{border: 5px solid transparent;
+                border-image: linear-gradient(72deg,#B8E80C,#70F20C,#12DB00);
+                border-image-slice: 1;
+                }
+                50%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(144deg,#B8E80C,#70F20C,#12DB00);
+                    border-image-slice: 1;
+                    
+                }
+                75%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(216deg,#B8E80C,#70F20C,#12DB00);
+                    border-image-slice: 1;
+                    
+                }
+                100%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(288deg,#B8E80C,#70F20C,#12DB00);
+                    border-image-slice: 1;
+                    
+                }
+                
+            }
+            @keyframes a{
+                0%{
+                    background-color:rgba(154,205,50,0.1);
+                }
+                100%{
+                    background-color:rgba(154,205,50,.3);
+                }
+            }
+            @keyframes b {
+            0%,18%,22%,25%,53%,57%,100%{
+            text-shadow: 0 0 4px #9ACD32,
+                 0 0 11px #9ACD32,
+                 0 0 19px #9ACD32,
+                 0 0 40px #9ACD32,
+                 0 0 80px #9ACD32,
+                 0 0 90px #9ACD32,
+                 0 0 100px #9ACD32,
+                 0 0 150px #9ACD32;
+                    }
+                  20%,24%,55%{
+                text-shadow: none;
+                  }
+                }
+            h1{
+                font-family: 'Martel Sans', sans-serif;
+                text-shadow: 0px 0px 10px rgba(225,225,225,1),
+               0px 0px 20px rgba(225,225,225,1),
+               0px 0px 40px rgba(225,225,225,1),
+               0px 0px 160px rgba(225,225,225,1);
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+            }
+            span{
+                animation-name:b;
+                animation-duration:5s;
+                animation-iteration-count: infinite;
+            }
         </style>
         
         <title>Title</title>
     </head>
     <body>
         <!-- HTML -->
+        <div>
     <h1>Grandmastered</h1>
     <p>Congratulations, you have became a grandmaster in your masteries</p>
-    <p>Click <a href="../../../main-event/war-general.html">here</a> to join the war as a general</p>
-        
+    <p>Click <span><a href="../../../main-event/war-general.html">here</a></span> to join the war as a general</p>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             // JS
