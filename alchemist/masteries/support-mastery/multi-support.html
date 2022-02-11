@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <style>
             /* CSS */
             html,body{
@@ -176,8 +180,23 @@
             background-blend-mode: screen;
                 }
             }
+            @keyframes d{
+                0%{
+                    font-family: 'Festive', cursive;
+                }
+                50%{
+                    font-family: 'Syne Tactile', cursive;
+                font-style: italic;
+                }
+                100%{
+                    font-family: 'Bebas Neue', cursive;
+                font-style:italic;
+                }
+            }
             h1{
-                font-family: 'Festive', cursive;
+                animation-name:d;
+                animation-duration:5s;
+                animation-iteration-count:infinite;
                 text-shadow: 0px 0px 10px rgba(225,225,225,1),
                0px 0px 20px rgba(225,225,225,1),
                0px 0px 40px rgba(225,225,225,1),
