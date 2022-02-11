@@ -8,25 +8,132 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
         <style>
             /* CSS */
-            
+            html,body{
+                height:100%;
+            }
+
+            body {
+            background-image:url(../../../picture/wizards.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color:black;
+            background-blend-mode: screen;
+            }
+            div{
+                text-align:center;
+                letter-spacing:2px;
+                animation-name:y, a;
+                animation-duration:5s;
+                animation-iteration-count:infinite;
+                position: absolute;
+                top:35%;
+                left:35%;
+                transform:translateX(-50%),translateY(-50%);
+                padding:1%;
+            }
+            @keyframes y{
+                0%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(360deg,#6B0BDE,#2D00F5,#0B1DDE);
+                    border-image-slice: 1;
+                    
+                }
+                25%{border: 5px solid transparent;
+                border-image: linear-gradient(72deg,#6B0BDE,#2D00F5,#0B1DDE);
+                border-image-slice: 1;
+                }
+                50%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(144deg,#6B0BDE,#2D00F5,#0B1DDE);
+                    border-image-slice: 1;
+                    
+                }
+                75%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(216deg,#6B0BDE,#2D00F5,#0B1DDE);
+                    border-image-slice: 1;
+                    
+                }
+                100%{
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(288deg,#6B0BDE,#2D00F5,#0B1DDE);
+                    border-image-slice: 1;
+                    
+                }
+                
+            }
+            @keyframes a{
+                0%{
+                    background-color:rgba(45, 0, 245,0.1);
+                }
+                100%{
+                    background-color:rgba(45, 0, 245,.3);
+                }
+            }
+            @keyframes b {
+            0%,18%,22%,25%,53%,57%,100%{
+            text-shadow: 0 0 4px #9ACD32,
+                 0 0 11px #9ACD32,
+                 0 0 19px #9ACD32,
+                 0 0 40px #9ACD32,
+                 0 0 80px #9ACD32,
+                 0 0 90px #9ACD32,
+                 0 0 100px #9ACD32,
+                 0 0 150px #9ACD32;
+                    }
+                  20%,24%,55%{
+                text-shadow: none;
+                  }
+                }
+            h2{
+                font-family: 'Festive', cursive;
+                text-shadow: 0px 0px 10px rgba(225,225,225,1),
+               0px 0px 20px rgba(225,225,225,1),
+               0px 0px 40px rgba(225,225,225,1),
+               0px 0px 160px rgba(225,225,225,1);
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                color:white;
+            }
+            span{
+                animation-name:b;
+                animation-duration:5s;
+                animation-iteration-count: infinite;
+            }
+            #a:hover{
+                color:red;
+            }
+            #b:hover{
+                color:purple;
+            }
+            #c:hover{
+                color:blue;
+            }
+            #d:hover{
+                color:yellow;
+            }
+            #e:hover{
+                color:green;
+            }
         </style>
         
         <title>Wizard Masteries</title>
     </head>
     <body>
-        
-    <h1>Following up with wizard masteries, there are many element you can learn. You may even learn rare elemental that many people can't posses.</h1>
-    
+    <div>
     <h2> Wizard Mastiers to choices</h2>
     <ul>
-        <li><a href="wizard-mastery/fire.html">Fire</a></li>
-        <li><a href="wizard-mastery/dark-magic.html">Dark Magic</a></li>
-        <li><a href="wizard-mastery/ice.html">Ice</a></li>
-        <li><a href="wizard-mastery/lightning.html">Lighting</a></li>
-        <li><a href="wizard-mastery/earth.html">Earth</a></li>
+        <li><a id="a" href="wizard-mastery/fire.html">Fire</a></li>
+        <li><a id="b" href="wizard-mastery/dark-magic.html">Dark Magic</a></li>
+        <li><a id="c" href="wizard-mastery/ice.html">Ice</a></li>
+        <li><a id="d" href="wizard-mastery/lightning.html">Lighting</a></li>
+        <li><a id="e" href="wizard-mastery/earth.html">Earth</a></li>
     </ul>
     
-    <a href = "../alchemist.html"> go back </a>
+    <p>Click <a href = "../alchemist.html"> here</a> to go back</p>
+    </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script>
